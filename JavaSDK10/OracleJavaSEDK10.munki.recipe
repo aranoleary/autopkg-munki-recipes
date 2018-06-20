@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the current release version of Oracle Java SE DK 10 and imports it to Munki.</string>
     <key>Identifier</key>
-    <string>com.github.aranoleary.autopkg.munki.oraclejavasedk10<</string>
+    <string>com.github.aranoleary.munki.OracleJavaSEDK10</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
