@@ -11,7 +11,7 @@
 		<key>NAME</key>
 		<string>AndroidStudioBeta</string>
 		<key>SEARCH_PATTERN</key>
-		<string>(https\://dl\.google\.com/dl/android/studio/ide-zips/.+/android-studio-ide.+\.zip)</string>
+		<string>(https\://dl\.google\.com/dl/android/studio/ide-zips/.+/android-studio-ide.+\-mac.zip)</string>
 		<key>SEARCH_URL</key>
 		<string>https://developer.android.com/studio/preview/index.html</string>
 	</dict>
@@ -57,28 +57,6 @@
 			</dict>
 			<key>Processor</key>
 			<string>Unarchiver</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>input_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/*.app</string>
-				<key>requirement</key>
-				<string>identifier "com.google.android.studio" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = EQHXZ8M8AV</string>
-			</dict>
-			<key>Processor</key>
-			<string>CodeSignatureVerifier</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>input_plist_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/*.app/Contents/Info.plist</string>
-				<key>plist_version_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-			<key>Processor</key>
-			<string>Versioner</string>
 		</dict>
 	</array>
 </dict>
