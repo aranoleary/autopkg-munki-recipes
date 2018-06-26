@@ -9,11 +9,11 @@
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>AndroidStudioBeta</string>
+		<string>Intel HAXM</string>
 		<key>SEARCH_PATTERN</key>
-		<string>(https\://github\.com/intel/haxm/releases/download/.+/haxm-macosx.+.zip)</string>
+		<string>(/download/.+/haxm-macosx.+\.zip)</string>
 		<key>SEARCH_URL</key>
-		<string>https://software.intel.com/en-us/articles/intel-hardware-accelerated-execution-manager-intel-haxm/index.html</string>
+		<string>https://github.com/intel/haxm/releases</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.4.0</string>
@@ -36,7 +36,7 @@
 				<key>filename</key>
 				<string>%NAME%.zip</string>
 				<key>url</key>
-				<string>%match%</string>
+				<string>%SEARCH_URL%%match%</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
